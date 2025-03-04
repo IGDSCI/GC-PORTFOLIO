@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Meta Tags de SEO -->
+    <meta name="description" content="Portfólio de Gustavo Capeletti, desenvolvedor front-end em Curitiba-PR. Soluções criativas em desenvolvimento web. Conhecimentos em HTML, CSS, JavaScript, React e mais.">
+    <meta name="keywords" content="desenvolvedor front-end, portfólio, Gustavo Capeletti, projetos, tecnologias, desenvolvimento web, react, css, javascript">
+    <meta name="author" content="Gustavo Capeletti">
+    <meta name="robots" content="index, follow"> <!-- Permite que os motores de busca indexem o conteúdo -->
+    
+    <!-- Open Graph para redes sociais (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Portfólio de Gustavo Capeletti - Desenvolvedor Front-end">
+    <meta property="og:description" content="Portfólio de Gustavo Capeletti com projetos de desenvolvimento front-end. Saiba mais sobre minhas habilidades e projetos.">
+    <meta property="og:image" content="caminho-da-imagem-de-preview.jpg">
+    <meta property="og:url" content="https://seu-site.com">
+    <meta property="og:type" content="website">
+
+    <!-- Link para ícones de redes sociais -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>Portfólio de Gustavo Capeletti - Desenvolvedor Front-end</title>
 </head>
 <body class="dark" id="mode">
     <header>
-        <div class="div-nav">
+        <nav class="div-nav">
             <div class="div-sections">
-                <h1 class="text-sections">HOME</h1>
-                <h1 class="text-sections">PROJETOS</h1>
-                <h1 class="text-sections">SOBRE</h1>
-                <h1 class="text-sections">CONTATO</h1>
+                <a href="#home" class="text-sections">HOME</a>
+                <a href="#projetos" class="text-sections">PROJETOS</a>
+                <a href="#sobre" class="text-sections">SOBRE</a>
+                <a href="#contato" class="text-sections">CONTATO</a>
             </div>
             <span class="bi bi-sun" id="light"></span>
             <span class="bi bi-moon hidden" id="dark"></span>
-        </div>
+        </nav>
     </header>
+
     <main>
-        <section class="hero-section">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
             <h1 class="hero-title"><b>SOLUÇÕES CRIATIVAS & </b> DESENVOLVIMENTO FRONT-END</h1>
             <h2 class="hero-description">Gustavo Capeletti, Curitiba-PR, Desenvolvedor Front-end.</h2>
             <div class="div-menu">
-                <span class="menu_icon bi bi-github"></span>
-                <span class="menu_icon bi bi-linkedin"></span>
-                <span class="menu_icon bi bi-instagram"></span>
+                <a href="https://github.com/GustavoCapeletti" target="_blank" class="menu_icon bi bi-github"></a>
+                <a href="https://www.linkedin.com/in/gustavocapeletti/" target="_blank" class="menu_icon bi bi-linkedin"></a>
+                <a href="https://www.instagram.com/gustavocapeletti/" target="_blank" class="menu_icon bi bi-instagram"></a>
             </div>
             <div>
-                <button class="see-projects">VER PROJETOS</button>
+                <button class="see-projects"><a href="#projetos">VER PROJETOS</a></button>
             </div>
         </section>
+
+        <!-- Conhecimentos -->
         <section class="knowledge-section">
             <h1 class="knowledge-description">Conhecimento nas principais tecnologias do mercado</h1>
             <div class="div-technologies">
-                <img src="https://logospng.org/download/css-3/logo-css-3-256.png" class="technologies-img"/>
-                <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" class="technologies-img"/>
-                <img src="https://logospng.org/download/html-5/logo-html-5-256.png" class="technologies-img"/>
-                <img src="https://logospng.org/download/react/logo-react-256.png" class="technologies-img"/>
+                <img src="https://logospng.org/download/css-3/logo-css-3-256.png" alt="CSS3 logo" class="technologies-img"/>
+                <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="JavaScript logo" class="technologies-img"/>
+                <img src="https://logospng.org/download/html-5/logo-html-5-256.png" alt="HTML5 logo" class="technologies-img"/>
+                <img src="https://logospng.org/download/react/logo-react-256.png" alt="React logo" class="technologies-img"/>
             </div>
         </section>
-        <section class="div-projects">
+
+        <!-- Projetos -->
+        <section class="div-projects" id="projetos">
             <h1 class="projects-title">PROJETOS</h1>
+            <!-- Exemplo de um Projeto -->
             <div class="project">
-                <img src="assets/images/josisbox.jpg" class="project-img">
+                <img src="assets/images/josisbox.jpg" alt="Projeto Josis Box" class="project-img">
                 <div>
                     <h1 class="title-project">JOSIS BOX ECOMMERCE</h1>
                     <h2 class="subtitle-project">Ecommerce de Livros</h2>
@@ -55,135 +78,46 @@
                         <li>Filtragem por preço e categoria.</li>
                     </ul>
                     <div class="tecnologies-used">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/html-5/logo-html-5-256.png" class="technologies-img-small"/>
+                        <img src="https://logospng.org/download/css-3/logo-css-3-256.png" alt="CSS logo" class="technologies-img-small"/>
+                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="JavaScript logo" class="technologies-img-small"/>
+                        <img src="https://logospng.org/download/html-5/logo-html-5-256.png" alt="HTML logo" class="technologies-img-small"/>
                     </div>
                     <div>
                         <button class="preview">PRÉVIA</button>
-                        <button class="repository">REPOSITÓRIO</button>
+                        <button class="repository"><a href="https://github.com/IGDSCI/josis-box" target="_blank">REPOSITÓRIO</a></button>
                     </div>
                 </div>
             </div>
-            <div class="project">
-                <div>
-                    <h1 class="title-project">ARCHSTIL BLOG</h1>
-                    <h2 class="subtitle-project">A história por trás dos Estilos Arquitetônicos</h2>
-                    <ul>
-                        <li>Postagem relacionadas e em destaque;</li>
-                        <li>Filtragem por tags e categorias;</li>
-                        <li>Biografia do autor.</li>
-                    </ul>
-                    <div class="tecnologies-used">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/html-5/logo-html-5-256.png" class="technologies-img-small"/>
-                    </div>
-                    <div>
-                        <button class="preview">PRÉVIA</button>
-                        <button class="repository">REPOSITÓRIO</button>
-                    </div>
-                </div>
-                <img src="assets/images/archstil.jpg" class="project-img">
-            </div>
-            <div class="project">
-                <img src="assets/images/games-store.jpg" class="project-img">
-                <div>
-                    <h1 class="title-project">GAMES STORE</h1>
-                    <h2 class="subtitle-project">Loja online de Games</h2>
-                    <ul>
-                        <li>Listagem de favoritos;</li>
-                        <li>Carrinho de compras;</li>
-                        <li>Filtragem por preço e categoria.</li>
-                    </ul>
-                    <div class="tecnologies-used">
-                        <img src="https://logospng.org/download/css-3/logo-css-3-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" class="technologies-img-small"/>
-                        <img src="https://logospng.org/download/html-5/logo-html-5-256.png" class="technologies-img-small"/>
-                    </div>
-                    <div>
-                        <button class="preview">PRÉVIA</button>
-                        <button class="repository">REPOSITÓRIO</button>
-                    </div>
-                </div>
-            </div>
-            <div class="all-projects">
-                <a href="https://github.com/IGDSCI" target="_blank"><button class="see-projects">VER TODOS OS PROJETOS</button></a>
-            </div>
+            <!-- Outros Projetos aqui -->
         </section>
-        <section class="about-me">
-            <img src="assets/images/me.jpeg" class="me-img">
+
+        <!-- Sobre Mim -->
+        <section class="about-me" id="sobre">
+            <img src="assets/images/me.jpeg" alt="Gustavo Capeletti" class="me-img">
             <div>
                 <h1 class="about-me-title">SOBRE MIM</h1>
-                <h2 class="about-me-description">Atualmente, busco uma oportunidade para ingressar no mercado de trabalho no campo da tecnologia. Tenho experiência no desenvolvimento de projetos pessoais e já atuei como desenvolvedor freelancer em um projeto Flutter. Desejo aplicar meus conhecimentos na prática, me desafiar e aprender coisas novas. Tenho interesse em trabalhar com o desenvolvimento frontend, mas estou aberto a outras oportunidades também.</h2>
+                <p class="about-me-description">Sou Gustavo Capeletti, um desenvolvedor Front-End em Curitiba-PR com paixão por criar soluções criativas e inovadoras. Atualmente busco uma oportunidade no mercado de trabalho.</p>
                 <button class="see-projects">CONECTE-SE COMIGO</button>
-                <button class="curriculum">CURRICULO</button>
+                <button class="curriculum"><a href="path-to-curriculum.pdf" target="_blank">CURRÍCULO</a></button>
             </div>
         </section>
-        <section class="infos">
-            <div class="div-knowledge">
-                <div>
-                    <h1 class="info-title">FORMAÇÃO</h1>
-                    <h2 class="info-subtitle">Engenharia de Software</h2>
-                    <h3 class="info-description">março 2021 - 2025</h3>
-                    <h3 class="info-description">PUC-PR</h3>
-                </div>
-                <div>
-                    <h1 class="info-title">EXPERIÊNCIA</h1>
-                    <h2 class="info-subtitle">Desenvolvedor Flutter</h2>
-                    <h3 class="info-description">Atuei como freelancer desenvolvendo um aplicativo de vendas on-line. Nesse projeto pude desenvolver minhas hard skills ao criar uma aplicação em Flutter, criando telas responsivas e manipulando as interações do usuário, além de integrar o aplicativo ao Firebase para o armazenamento dos dados e a autenticação dos usuários. </h3>
-                    <h3 class="info-description">Wings Personnalité</h3>
-                </div>
-            </div>
-            <div>
-                <h1 class="info-title">CURSOS</h1>
-                <div id="accordion">
-                    <div class="accordion_item">
-                        <button class="accordion_header start">
-                            <span>Versionamento de Código com Git e GitHub</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion_body">
-                            <p>Digital Innovation One. Fev 2023. 2h.</p>
-                        </div>
-                    </div>
-                    <div class="accordion_item">
-                        <button class="accordion_header">
-                            <span>Contribuindo em um Projeto Open Source no GitHub</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion_body">
-                            <p>Digital Innovation One. Fev 2023. 2h.</p>
-                        </div>
-                    </div>
-                    <div class="accordion_item">
-                        <button class="accordion_header end">
-                            <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion_body end">
-                            <p>Digital Innovation One. Fev 2023. 2h.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact-me">
+
+        <!-- Contato -->
+        <section class="contact-me" id="contato">
             <h1 class="about-me-title">CONTATE-ME</h1>
-            <h2 class="about-me-description">Estou disponível para serviços e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.</h2>
+            <p class="about-me-description">Estou disponível para serviços e novas conexões. Contate-me via e-mail ou conecte-se comigo nas minhas redes sociais.</p>
             <div class="div-menu-contact">
-                <span class="div-menu-contact bi bi-github">GitHub</span>
-                <span class="div-menu-contact bi bi-linkedin">LinkedIn</span>
-                <span class="div-menu-contact bi bi-instagram">Instagram</span>
+                <a href="https://github.com/GustavoCapeletti" target="_blank" class="div-menu-contact bi bi-github">GitHub</a>
+                <a href="https://www.linkedin.com/in/gustavocapeletti/" target="_blank" class="div-menu-contact bi bi-linkedin">LinkedIn</a>
+                <a href="https://www.instagram.com/gustavocapeletti/" target="_blank" class="div-menu-contact bi bi-instagram">Instagram</a>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>
-            © 2023. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
-            <a href="https://www.dio.me/" target="_blank">Digital Innovation One.</a>    
-          </p>
+        <p>© 2023. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da <a href="https://www.dio.me/" target="_blank">Digital Innovation One.</a></p>
     </footer>
+
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>
